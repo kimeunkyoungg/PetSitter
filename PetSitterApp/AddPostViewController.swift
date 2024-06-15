@@ -15,6 +15,13 @@ class AddPostViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        if let signUpVC = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") {
+            navigationController?.pushViewController(signUpVC, animated: true)
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

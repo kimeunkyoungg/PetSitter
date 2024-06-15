@@ -9,6 +9,9 @@ import UIKit
 
 class MyPageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var myPageImage: UIImageView!
+    @IBOutlet weak var content: UILabel!
+    @IBOutlet weak var title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

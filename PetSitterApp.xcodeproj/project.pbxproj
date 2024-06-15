@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC07D7192C1C7D6100320AD4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D7182C1C7D6100320AD4 /* Post.swift */; };
+		AC07D71B2C1C7D7700320AD4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D71A2C1C7D7700320AD4 /* PostTableViewCell.swift */; };
+		AC07D71F2C1C940300320AD4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D71E2C1C940300320AD4 /* AddPostViewController.swift */; };
+		AC07D7232C1CA83900320AD4 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D7222C1CA83900320AD4 /* PostDetailViewController.swift */; };
+		AC07D7252C1CB6BB00320AD4 /* EditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D7242C1CB6BB00320AD4 /* EditPostViewController.swift */; };
+		AC31E2442C1B68AD00A41EC4 /* MyPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31E2432C1B68AD00A41EC4 /* MyPet.swift */; };
+		AC31E2462C1B6A5400A41EC4 /* MyPetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31E2452C1B6A5400A41EC4 /* MyPetTableViewCell.swift */; };
 		AC489F272C175987004516D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F262C175987004516D6 /* AppDelegate.swift */; };
 		AC489F292C175987004516D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F282C175987004516D6 /* SceneDelegate.swift */; };
 		AC489F2B2C175987004516D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F2A2C175987004516D6 /* ViewController.swift */; };
 		AC489F2E2C175987004516D6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AC489F2D2C175987004516D6 /* Base */; };
 		AC489F302C175988004516D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC489F2F2C175988004516D6 /* Assets.xcassets */; };
 		AC489F332C175988004516D6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AC489F322C175988004516D6 /* Base */; };
+		AC489F3B2C175A4F004516D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC489F3A2C175A4F004516D6 /* GoogleService-Info.plist */; };
+		AC489F3F2C175AB1004516D6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AC489F3E2C175AB1004516D6 /* FirebaseAuth */; };
+		AC489F412C175AB8004516D6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AC489F402C175AB8004516D6 /* FirebaseFirestore */; };
+		AC489F432C175AC0004516D6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AC489F422C175AC0004516D6 /* FirebaseStorage */; };
+		AC489F462C175C68004516D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F452C175C68004516D6 /* LoginViewController.swift */; };
+		AC489F482C175C75004516D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F472C175C75004516D6 /* HomeViewController.swift */; };
+		AC489F4A2C17609B004516D6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F492C17609B004516D6 /* SignUpViewController.swift */; };
+		AC48B3032C1B376200AA1F7A /* PetManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B3022C1B376200AA1F7A /* PetManageViewController.swift */; };
+		AC48B3052C1B377600AA1F7A /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B3042C1B377600AA1F7A /* ReservationViewController.swift */; };
+		AC48B3072C1B3E7C00AA1F7A /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B3062C1B3E7C00AA1F7A /* MyPage.swift */; };
+		AC48B3092C1B3F6900AA1F7A /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B3082C1B3F6900AA1F7A /* MyPageTableViewCell.swift */; };
+		AC48B30B2C1B499A00AA1F7A /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B30A2C1B499A00AA1F7A /* AddPetViewController.swift */; };
+		AC6532E62C18520E00C561DE /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6532E52C18520E00C561DE /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC07D7182C1C7D6100320AD4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AC07D71A2C1C7D7700320AD4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		AC07D71E2C1C940300320AD4 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		AC07D7222C1CA83900320AD4 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		AC07D7242C1CB6BB00320AD4 /* EditPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostViewController.swift; sourceTree = "<group>"; };
+		AC31E2432C1B68AD00A41EC4 /* MyPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPet.swift; sourceTree = "<group>"; };
+		AC31E2452C1B6A5400A41EC4 /* MyPetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetTableViewCell.swift; sourceTree = "<group>"; };
 		AC489F232C175987004516D6 /* PetSitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC489F262C175987004516D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC489F282C175987004516D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,16 @@
 		AC489F2F2C175988004516D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC489F322C175988004516D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC489F342C175988004516D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC489F3A2C175A4F004516D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC489F452C175C68004516D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC489F472C175C75004516D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC489F492C17609B004516D6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC48B3022C1B376200AA1F7A /* PetManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManageViewController.swift; sourceTree = "<group>"; };
+		AC48B3042C1B377600AA1F7A /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		AC48B3062C1B3E7C00AA1F7A /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
+		AC48B3082C1B3F6900AA1F7A /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		AC48B30A2C1B499A00AA1F7A /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		AC6532E52C18520E00C561DE /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC489F3F2C175AB1004516D6 /* FirebaseAuth in Frameworks */,
+				AC489F412C175AB8004516D6 /* FirebaseFirestore in Frameworks */,
+				AC489F432C175AC0004516D6 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +82,7 @@
 			children = (
 				AC489F252C175987004516D6 /* PetSitterApp */,
 				AC489F242C175987004516D6 /* Products */,
+				AC489F3D2C175AB1004516D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +104,32 @@
 				AC489F2F2C175988004516D6 /* Assets.xcassets */,
 				AC489F312C175988004516D6 /* LaunchScreen.storyboard */,
 				AC489F342C175988004516D6 /* Info.plist */,
+				AC489F3A2C175A4F004516D6 /* GoogleService-Info.plist */,
+				AC489F452C175C68004516D6 /* LoginViewController.swift */,
+				AC489F472C175C75004516D6 /* HomeViewController.swift */,
+				AC489F492C17609B004516D6 /* SignUpViewController.swift */,
+				AC6532E52C18520E00C561DE /* MyPageViewController.swift */,
+				AC48B3022C1B376200AA1F7A /* PetManageViewController.swift */,
+				AC48B3042C1B377600AA1F7A /* ReservationViewController.swift */,
+				AC48B3062C1B3E7C00AA1F7A /* MyPage.swift */,
+				AC48B3082C1B3F6900AA1F7A /* MyPageTableViewCell.swift */,
+				AC48B30A2C1B499A00AA1F7A /* AddPetViewController.swift */,
+				AC31E2432C1B68AD00A41EC4 /* MyPet.swift */,
+				AC31E2452C1B6A5400A41EC4 /* MyPetTableViewCell.swift */,
+				AC07D7182C1C7D6100320AD4 /* Post.swift */,
+				AC07D71A2C1C7D7700320AD4 /* PostTableViewCell.swift */,
+				AC07D71E2C1C940300320AD4 /* AddPostViewController.swift */,
+				AC07D7222C1CA83900320AD4 /* PostDetailViewController.swift */,
+				AC07D7242C1CB6BB00320AD4 /* EditPostViewController.swift */,
 			);
 			path = PetSitterApp;
+			sourceTree = "<group>";
+		};
+		AC489F3D2C175AB1004516D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +148,11 @@
 			dependencies = (
 			);
 			name = PetSitterApp;
+			packageProductDependencies = (
+				AC489F3E2C175AB1004516D6 /* FirebaseAuth */,
+				AC489F402C175AB8004516D6 /* FirebaseFirestore */,
+				AC489F422C175AC0004516D6 /* FirebaseStorage */,
+			);
 			productName = PetSitterApp;
 			productReference = AC489F232C175987004516D6 /* PetSitterApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +181,9 @@
 				Base,
 			);
 			mainGroup = AC489F1A2C175987004516D6;
+			packageReferences = (
+				AC489F3C2C175A96004516D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AC489F242C175987004516D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC489F302C175988004516D6 /* Assets.xcassets in Resources */,
+				AC489F3B2C175A4F004516D6 /* GoogleService-Info.plist in Resources */,
 				AC489F332C175988004516D6 /* Base in Resources */,
 				AC489F2E2C175987004516D6 /* Base in Resources */,
 			);
@@ -138,7 +212,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC48B3072C1B3E7C00AA1F7A /* MyPage.swift in Sources */,
+				AC489F4A2C17609B004516D6 /* SignUpViewController.swift in Sources */,
+				AC07D71F2C1C940300320AD4 /* AddPostViewController.swift in Sources */,
+				AC48B3032C1B376200AA1F7A /* PetManageViewController.swift in Sources */,
+				AC48B3052C1B377600AA1F7A /* ReservationViewController.swift in Sources */,
+				AC489F482C175C75004516D6 /* HomeViewController.swift in Sources */,
+				AC6532E62C18520E00C561DE /* MyPageViewController.swift in Sources */,
+				AC48B30B2C1B499A00AA1F7A /* AddPetViewController.swift in Sources */,
+				AC07D7252C1CB6BB00320AD4 /* EditPostViewController.swift in Sources */,
+				AC48B3092C1B3F6900AA1F7A /* MyPageTableViewCell.swift in Sources */,
+				AC489F462C175C68004516D6 /* LoginViewController.swift in Sources */,
+				AC07D7192C1C7D6100320AD4 /* Post.swift in Sources */,
 				AC489F2B2C175987004516D6 /* ViewController.swift in Sources */,
+				AC07D71B2C1C7D7700320AD4 /* PostTableViewCell.swift in Sources */,
+				AC07D7232C1CA83900320AD4 /* PostDetailViewController.swift in Sources */,
+				AC31E2442C1B68AD00A41EC4 /* MyPet.swift in Sources */,
+				AC31E2462C1B6A5400A41EC4 /* MyPetTableViewCell.swift in Sources */,
 				AC489F272C175987004516D6 /* AppDelegate.swift in Sources */,
 				AC489F292C175987004516D6 /* SceneDelegate.swift in Sources */,
 			);
@@ -361,6 +451,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC489F3C2C175A96004516D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC489F3E2C175AB1004516D6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC489F3C2C175A96004516D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AC489F402C175AB8004516D6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC489F3C2C175A96004516D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AC489F422C175AC0004516D6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC489F3C2C175A96004516D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC489F1B2C175987004516D6 /* Project object */;
 }

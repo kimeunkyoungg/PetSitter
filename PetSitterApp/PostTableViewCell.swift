@@ -9,6 +9,12 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var userName: UILabel!
+
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var postTitle: UILabel!
+    @IBOutlet weak var postDetail: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
