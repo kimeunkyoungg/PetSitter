@@ -8,14 +8,14 @@
 import UIKit
 import FirebaseAuth
 
+//로그인 화면
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationController?.setNavigationBarHidden(true, animated: false)
-        // Do any additional setup after loading the view.
+
     }
     
     
@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
                 Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
                     guard let self = self else { return }
                     if let error = error {
-                        print("Error logging in: \(error.localizedDescription)")
+                        print("Error \(error.localizedDescription)")
                     } else {
                         self.navigateToHome()
                     }
@@ -43,8 +43,6 @@ class LoginViewController: UIViewController {
 
             func navigateToHome() {
                 if let tabBarVC = storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController {
-                          // Replace the current navigation stack with the tab bar controller
-                          // 네비게이션 스택을 재설정하여 탭바 컨트롤러를 루트로 설정
                           navigationController?.setViewControllers([tabBarVC], animated: true)
                       }
 //

@@ -5,25 +5,41 @@
 //  Created by 김은경 on 6/18/24.
 //
 
+
 import UIKit
-
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 class PetDetailViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var petImageView: UIImageView!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var kindLabel: UILabel!
+    @IBOutlet weak var sexLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    var pet: MyPet?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // 전달받은 애완동물 정보를 레이블에 설정합니다.
+        guard let pet = pet else {
+            print("Pet 정보가 없습니다.")
+            return
+        }
+        
+        nameLabel.text = pet.petName
+        ageLabel.text = pet.age
+        kindLabel.text = pet.kind
+        sexLabel.text = pet.sex
+        heightLabel.text = pet.weight
+        if let petImage = pet.petImage {
+            petImageView.image = petImage
+        } else {
+            petImageView.image = UIImage(named: "defaultPetImage")
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

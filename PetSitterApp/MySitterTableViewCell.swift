@@ -9,6 +9,14 @@ import UIKit
 
 class MySitterTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var sitterName: UILabel!
+    
+    @IBOutlet weak var reservationTime: UILabel!
+    
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var date: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

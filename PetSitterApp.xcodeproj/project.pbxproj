@@ -12,6 +12,7 @@
 		AC07D71F2C1C940300320AD4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D71E2C1C940300320AD4 /* AddPostViewController.swift */; };
 		AC07D7232C1CA83900320AD4 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D7222C1CA83900320AD4 /* PostDetailViewController.swift */; };
 		AC07D7252C1CB6BB00320AD4 /* EditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D7242C1CB6BB00320AD4 /* EditPostViewController.swift */; };
+		AC1609DC2C1F506B0077B4B4 /* DbFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1609DB2C1F506B0077B4B4 /* DbFirebase.swift */; };
 		AC31E2442C1B68AD00A41EC4 /* MyPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31E2432C1B68AD00A41EC4 /* MyPet.swift */; };
 		AC31E2462C1B6A5400A41EC4 /* MyPetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31E2452C1B6A5400A41EC4 /* MyPetTableViewCell.swift */; };
 		AC489F272C175987004516D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F262C175987004516D6 /* AppDelegate.swift */; };
@@ -33,6 +34,12 @@
 		AC48B3092C1B3F6900AA1F7A /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B3082C1B3F6900AA1F7A /* MyPageTableViewCell.swift */; };
 		AC48B30B2C1B499A00AA1F7A /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B30A2C1B499A00AA1F7A /* AddPetViewController.swift */; };
 		AC6532E62C18520E00C561DE /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6532E52C18520E00C561DE /* MyPageViewController.swift */; };
+		AC763C682C20025E00944630 /* MyReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC763C672C20025E00944630 /* MyReservationViewController.swift */; };
+		AC763C6A2C20028900944630 /* MySitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC763C692C20028900944630 /* MySitterViewController.swift */; };
+		AC763C6C2C20626000944630 /* MyReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC763C6B2C20626000944630 /* MyReservation.swift */; };
+		AC763C722C20628F00944630 /* MyReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC763C712C20628F00944630 /* MyReservationTableViewCell.swift */; };
+		AC763C742C20770200944630 /* MySitterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC763C732C20770200944630 /* MySitterTableViewCell.swift */; };
+		AC763C762C209E5E00944630 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC763C752C209E5E00944630 /* PetDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,7 @@
 		AC07D71E2C1C940300320AD4 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		AC07D7222C1CA83900320AD4 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		AC07D7242C1CB6BB00320AD4 /* EditPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostViewController.swift; sourceTree = "<group>"; };
+		AC1609DB2C1F506B0077B4B4 /* DbFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbFirebase.swift; sourceTree = "<group>"; };
 		AC31E2432C1B68AD00A41EC4 /* MyPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPet.swift; sourceTree = "<group>"; };
 		AC31E2452C1B6A5400A41EC4 /* MyPetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetTableViewCell.swift; sourceTree = "<group>"; };
 		AC489F232C175987004516D6 /* PetSitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +69,12 @@
 		AC48B3082C1B3F6900AA1F7A /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
 		AC48B30A2C1B499A00AA1F7A /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 		AC6532E52C18520E00C561DE /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		AC763C672C20025E00944630 /* MyReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationViewController.swift; sourceTree = "<group>"; };
+		AC763C692C20028900944630 /* MySitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySitterViewController.swift; sourceTree = "<group>"; };
+		AC763C6B2C20626000944630 /* MyReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservation.swift; sourceTree = "<group>"; };
+		AC763C712C20628F00944630 /* MyReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationTableViewCell.swift; sourceTree = "<group>"; };
+		AC763C732C20770200944630 /* MySitterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySitterTableViewCell.swift; sourceTree = "<group>"; };
+		AC763C752C209E5E00944630 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,13 @@
 				AC07D71E2C1C940300320AD4 /* AddPostViewController.swift */,
 				AC07D7222C1CA83900320AD4 /* PostDetailViewController.swift */,
 				AC07D7242C1CB6BB00320AD4 /* EditPostViewController.swift */,
+				AC1609DB2C1F506B0077B4B4 /* DbFirebase.swift */,
+				AC763C672C20025E00944630 /* MyReservationViewController.swift */,
+				AC763C692C20028900944630 /* MySitterViewController.swift */,
+				AC763C6B2C20626000944630 /* MyReservation.swift */,
+				AC763C712C20628F00944630 /* MyReservationTableViewCell.swift */,
+				AC763C732C20770200944630 /* MySitterTableViewCell.swift */,
+				AC763C752C209E5E00944630 /* PetDetailViewController.swift */,
 			);
 			path = PetSitterApp;
 			sourceTree = "<group>";
@@ -215,6 +236,7 @@
 				AC48B3072C1B3E7C00AA1F7A /* MyPage.swift in Sources */,
 				AC489F4A2C17609B004516D6 /* SignUpViewController.swift in Sources */,
 				AC07D71F2C1C940300320AD4 /* AddPostViewController.swift in Sources */,
+				AC763C6A2C20028900944630 /* MySitterViewController.swift in Sources */,
 				AC48B3032C1B376200AA1F7A /* PetManageViewController.swift in Sources */,
 				AC48B3052C1B377600AA1F7A /* ReservationViewController.swift in Sources */,
 				AC489F482C175C75004516D6 /* HomeViewController.swift in Sources */,
@@ -222,14 +244,20 @@
 				AC48B30B2C1B499A00AA1F7A /* AddPetViewController.swift in Sources */,
 				AC07D7252C1CB6BB00320AD4 /* EditPostViewController.swift in Sources */,
 				AC48B3092C1B3F6900AA1F7A /* MyPageTableViewCell.swift in Sources */,
+				AC763C762C209E5E00944630 /* PetDetailViewController.swift in Sources */,
+				AC763C722C20628F00944630 /* MyReservationTableViewCell.swift in Sources */,
 				AC489F462C175C68004516D6 /* LoginViewController.swift in Sources */,
 				AC07D7192C1C7D6100320AD4 /* Post.swift in Sources */,
+				AC763C742C20770200944630 /* MySitterTableViewCell.swift in Sources */,
+				AC763C682C20025E00944630 /* MyReservationViewController.swift in Sources */,
+				AC763C6C2C20626000944630 /* MyReservation.swift in Sources */,
 				AC489F2B2C175987004516D6 /* ViewController.swift in Sources */,
 				AC07D71B2C1C7D7700320AD4 /* PostTableViewCell.swift in Sources */,
 				AC07D7232C1CA83900320AD4 /* PostDetailViewController.swift in Sources */,
 				AC31E2442C1B68AD00A41EC4 /* MyPet.swift in Sources */,
 				AC31E2462C1B6A5400A41EC4 /* MyPetTableViewCell.swift in Sources */,
 				AC489F272C175987004516D6 /* AppDelegate.swift in Sources */,
+				AC1609DC2C1F506B0077B4B4 /* DbFirebase.swift in Sources */,
 				AC489F292C175987004516D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

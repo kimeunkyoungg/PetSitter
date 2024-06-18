@@ -7,12 +7,11 @@
 
 import UIKit
 
+//글 전체 화면
 class PostDetailViewController: UIViewController {
+
     
-    var userName : String?
-    var postTitle : String?
-    var postDetail : String?
-    var price : String?
+    var post: Post?
     
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var postTitleLabel: UILabel!
@@ -23,33 +22,36 @@ class PostDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        postTitleLabel.text = postTitle
-        postDetailLabel.text = postDetail
-        priceLabel.text = price
-        userNameLabel.text = userName
-        
-        if let price = price {
-            if let priceValue = Double(price) {
+        if let post = post {
+            userNameLabel.text = post.userName
+            postTitleLabel.text = post.postTitle
+            postDetailLabel.text = post.postDetail
+            priceLabel.text = post.price
+            
+            if let priceValue = Double(post.price) {
                 let doublePriceValue = priceValue * 2
                 doublePriceLabel.text = "\(Int(doublePriceValue))"
-                
-            } 
-            else {
-                doublePriceLabel.text = "N/A" // price가 유효하지 않은 경우
-                        
-                        }
+            } else {
+                doublePriceLabel.text = "N/A" // 혹시 오류날까봐
+            }
         } else {
-            doublePriceLabel.text = "N/A" // price가 nil인 경우
-            
+            userNameLabel.text = "N/A"
+            postTitleLabel.text = "N/A"
+            postDetailLabel.text = "N/A"
+            priceLabel.text = "N/A"
+            doublePriceLabel.text = "N/A"
         }
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func reservationButtonPressed(_ sender: UIButton) {
-        if let reservationVC = storyboard?.instantiateViewController(withIdentifier: "ReservationViewController") {
+        guard let sitterID = post?.userID else { return }
+        
+        if let reservationVC = storyboard?.instantiateViewController(withIdentifier: "ReservationViewController") as? ReservationViewController {
+            reservationVC.sitterID = sitterID
             navigationController?.pushViewController(reservationVC, animated: true)
-            
         }
+        
     }
     
     /*

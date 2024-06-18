@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
+
+//마이페이지 화면
 
 class MyPageViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    var db: Firestore!
     
-    //let menuItems = ["내 반려동물" , "예약 내역"]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MyPage.myPageList.count
         
@@ -32,7 +37,7 @@ class MyPageViewController: UIViewController,UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 180 // 모든 셀의 높이를 100으로 설정
+           return 180
        }
 
     
@@ -44,7 +49,12 @@ class MyPageViewController: UIViewController,UITableViewDelegate, UITableViewDat
                 navigationController?.pushViewController(petManagementVC, animated: true)
             }
         case 1:
-            if let reservationHistoryVC = storyboard?.instantiateViewController(withIdentifier: "ReservationViewController") {
+            if let reservationHistoryVC = storyboard?.instantiateViewController(withIdentifier: "MyReservationViewController") {
+                navigationController?.pushViewController(reservationHistoryVC, animated: true)
+            }
+            
+        case 2:
+            if let reservationHistoryVC = storyboard?.instantiateViewController(withIdentifier: "MySitterViewController") {
                 navigationController?.pushViewController(reservationHistoryVC, animated: true)
             }
         default:
@@ -53,19 +63,44 @@ class MyPageViewController: UIViewController,UITableViewDelegate, UITableViewDat
         }
         
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MenuCell")
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0) // 위쪽 간격 설정
-        // Do any additional setup after loading the view.
+       
+        db = Firestore.firestore()
+        // 로그인된 사용자의 이름 가져오기
+               if let user = Auth.auth().currentUser {
+                   let userID = user.uid
+                   let userInfo = db.collection("userInfo").document(userID)
+                   userInfo.getDocument { (document, error) in
+                       if let document = document, document.exists {
+                           let dataDescription = document.data()
+                           let userName = dataDescription?["name"] as? String
+                           self.userNameLabel.text = userName
+                       } else {
+                           print("없음")
+                       }
+                   }
+               }
     }
     
-
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        try? Auth.auth().signOut()
+        if let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+            let navController = UINavigationController(rootViewController: loginVC)
+            navController.modalPresentationStyle = .fullScreen
+            present(navController, animated: true, completion: nil)
+            
+        }
+    
+        
+    
+    }
+        
+    
     /*
     // MARK: - Navigation
 

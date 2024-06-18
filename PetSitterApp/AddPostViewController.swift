@@ -6,31 +6,71 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
+import FirebaseStorage
 
+//글 추가 화면
 class AddPostViewController: UIViewController {
 
+    @IBOutlet weak var detailTextField: UITextView!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
+    
+    var db: Firestore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
+        
 
-        // Do any additional setup after loading the view.
+
     }
     
-    
-    @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        if let signUpVC = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") {
-            navigationController?.pushViewController(signUpVC, animated: true)
-            
+    @IBAction func finishAddPostButtonPressed(_ sender: UIButton) {
+        
+        guard let currentUser = Auth.auth().currentUser else {
+            return
         }
-    }
+        
+        let userID = currentUser.uid
+        let title = titleTextField.text ?? ""
+        let price = priceTextField.text ?? ""
+        let detail = detailTextField.text ?? ""
+        
+        // userInfo에서 이름 가져오기
+        db.collection("userInfo").document(userID).getDocument { [weak self] (document, error) in
+            
+            guard let document = document, document.exists, let data = document.data() else {
+                return
+            }
+            
+            let userName = data["name"] as? String ?? "Unknown"
+            
+            let postData: [String: Any] = [
+                "userID": userID,
+                "userName": userName,
+                "title": title,
+                "price": price,
+                "detail": detail
+            ]
+            
+            self?.db.collection("post").addDocument(data: postData) { error in
+                if let error = error {
+                    print("Error \(error.localizedDescription)")
+                } else {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                    DispatchQueue.main.async {
+                        if let tabBarVC = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController {
+                            self?.navigationController?.setViewControllers([tabBarVC], animated: true)
+                        }
+                    }
+                }
+            }
+        }
+        
     }
-    */
+    
 
 }

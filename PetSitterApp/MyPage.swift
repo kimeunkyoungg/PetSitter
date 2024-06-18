@@ -21,6 +21,7 @@ class MyPage {
 
        static var myPageList: [MyPage] = [
            MyPage(title: "내 반려동물", content: "내 반려동물을 등록하고 관리하세요", image: UIImage(named: "dog")),
-           MyPage(title: "예약 내역", content: "나의 예약내역을 확인해보세요", image: UIImage(named: "reservation"))
+           MyPage(title: "예약 내역", content: "나의 예약내역을 확인해보세요", image: UIImage(named: "reservation")),
+           MyPage(title: "돌봄 내역", content: "나의 돌봄내역을 확인해보세요", image: UIImage(named: "walk"))
        ]
 }

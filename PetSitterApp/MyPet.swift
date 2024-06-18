@@ -9,15 +9,22 @@ import Foundation
 import UIKit
 
 class MyPet {
-    var petName : String
-    var petImage : UIImage?
+    var petName: String
+    var petImageURL: String?
+    var petImage: UIImage?
+    var age: String
+    var kind: String
+    var sex: String
+    var weight: String
     
-    init(petName : String, petImage : UIImage?){
-        self.petName=petName
-        self.petImage=petImage
+    init(petName: String, petImageURL: String?, age: String, kind: String, sex: String, weight: String) {
+        self.petName = petName
+        self.petImageURL = petImageURL
+        self.age = age
+        self.kind = kind
+        self.sex = sex
+        self.weight = weight
     }
     
-    static var myPetList: [MyPet]=[MyPet(petName: "대봉", petImage: UIImage(named: "bong")), MyPet(petName: "살구", petImage: UIImage(named: "salgu"))
-    
-    ]
+    static var myPetList: [MyPet] = []
 }
