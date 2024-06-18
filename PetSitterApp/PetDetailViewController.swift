@@ -24,7 +24,6 @@ class PetDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 전달받은 애완동물 정보를 레이블에 설정합니다.
         guard let pet = pet else {
             print("Pet 정보가 없습니다.")
             return
