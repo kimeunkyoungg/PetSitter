@@ -20,7 +20,7 @@
 
 ###### 클릭하면 유튜브로 이동합니다
 
-[![시연 영상](http://img.youtube.com/vi/3YecM79Pqxs?si=czE21wS572bQ8lnz/0.jpg)](https://youtu.be/3YecM79Pqxs?si=czE21wS572bQ8lnz)
+[![시연 영상](http://img.youtube.com/vi/3YecM79Pqxs/0.jpg)](https://youtu.be/3YecM79Pqxs)
 </br>
 
 ## :camera: 실행 화면
