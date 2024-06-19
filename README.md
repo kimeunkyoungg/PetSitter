@@ -7,9 +7,9 @@
 
 ## 👷: 시스템 구조도
 
-<img width="450" alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/aafaac2d-0f67-4047-b069-e271a863c60f">
+<img alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/aafaac2d-0f67-4047-b069-e271a863c60f">
 <br>
-<img width="450" alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/fd24f535-6459-418c-9de4-f6fb1e15896d">
+<img alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/fd24f535-6459-418c-9de4-f6fb1e15896d">
 
 
 
@@ -20,8 +20,7 @@
 
 ###### 클릭하면 유튜브로 이동합니다
 
-[![시연 영상]([http://img.youtube.com/vi/zHoB05h0lhw/0.jpg)](https://youtu.be/zHoB05h0lhw](https://www.youtube.com/watch?v=3YecM79Pqxs))
-
+[![시연 영상](http://img.youtube.com/vi/3YecM79Pqxs?si=czE21wS572bQ8lnz/0.jpg)](https://youtu.be/3YecM79Pqxs?si=czE21wS572bQ8lnz)
 </br>
 
 ## :camera: 실행 화면
