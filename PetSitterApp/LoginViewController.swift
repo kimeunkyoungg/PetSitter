@@ -36,7 +36,6 @@ class LoginViewController: UIViewController {
                 Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
                     guard let self = self else { return }
                     if let error = error {
-                        print("Error \(error.localizedDescription)")
                     } else {
                         self.navigateToHome()
                     }

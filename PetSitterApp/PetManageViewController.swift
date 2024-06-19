@@ -4,7 +4,7 @@
 //
 //  Created by 김은경 on 6/13/24.
 //
-// 셀 간격 수정
+
 //나의 반려동물 화면
 import UIKit
 import Firebase

@@ -17,7 +17,6 @@
 		AC31E2462C1B6A5400A41EC4 /* MyPetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31E2452C1B6A5400A41EC4 /* MyPetTableViewCell.swift */; };
 		AC489F272C175987004516D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F262C175987004516D6 /* AppDelegate.swift */; };
 		AC489F292C175987004516D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F282C175987004516D6 /* SceneDelegate.swift */; };
-		AC489F2B2C175987004516D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC489F2A2C175987004516D6 /* ViewController.swift */; };
 		AC489F2E2C175987004516D6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AC489F2D2C175987004516D6 /* Base */; };
 		AC489F302C175988004516D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC489F2F2C175988004516D6 /* Assets.xcassets */; };
 		AC489F332C175988004516D6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AC489F322C175988004516D6 /* Base */; };
@@ -54,7 +53,6 @@
 		AC489F232C175987004516D6 /* PetSitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC489F262C175987004516D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC489F282C175987004516D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC489F2A2C175987004516D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC489F2D2C175987004516D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC489F2F2C175988004516D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC489F322C175988004516D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			children = (
 				AC489F262C175987004516D6 /* AppDelegate.swift */,
 				AC489F282C175987004516D6 /* SceneDelegate.swift */,
-				AC489F2A2C175987004516D6 /* ViewController.swift */,
 				AC489F2C2C175987004516D6 /* Main.storyboard */,
 				AC489F2F2C175988004516D6 /* Assets.xcassets */,
 				AC489F312C175988004516D6 /* LaunchScreen.storyboard */,
@@ -251,7 +248,6 @@
 				AC763C742C20770200944630 /* MySitterTableViewCell.swift in Sources */,
 				AC763C682C20025E00944630 /* MyReservationViewController.swift in Sources */,
 				AC763C6C2C20626000944630 /* MyReservation.swift in Sources */,
-				AC489F2B2C175987004516D6 /* ViewController.swift in Sources */,
 				AC07D71B2C1C7D7700320AD4 /* PostTableViewCell.swift in Sources */,
 				AC07D7232C1CA83900320AD4 /* PostDetailViewController.swift in Sources */,
 				AC31E2442C1B68AD00A41EC4 /* MyPet.swift in Sources */,

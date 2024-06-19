@@ -81,7 +81,6 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     func fetchPosts() {
         db.collection("post").getDocuments { (querySnapshot, error) in
             if let error = error {
-                print("Error: \(error.localizedDescription)")
                 return
             }
             
