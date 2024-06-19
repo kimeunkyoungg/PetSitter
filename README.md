@@ -7,9 +7,9 @@
 
 ## 👷: 시스템 구조도
 
-<img alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/aafaac2d-0f67-4047-b069-e271a863c60f">
+<img width=100% alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/aafaac2d-0f67-4047-b069-e271a863c60f">
 <br>
-<img alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/fd24f535-6459-418c-9de4-f6fb1e15896d">
+<img width=100% alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/fd24f535-6459-418c-9de4-f6fb1e15896d">
 
 
 
