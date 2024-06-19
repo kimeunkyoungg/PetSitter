@@ -40,10 +40,10 @@
 #### 나의 반려동물 관리
 <img width="450" alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/a214d1d3-db11-4a74-8571-081aceee9564">
 
-#### 펫시팅 예약 내역
+#### 예약 내역
 <img width="450" alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/8854c7d7-8a63-41c6-bbd9-949da79b0ed6">
 
-#### 펫시터 예약 내역
+#### 돌봄 내역
 <img width="450" alt="image" src="https://github.com/kimeunkyoungg/PetSitter/assets/127072393/a8ed92f9-2137-4a29-896d-aa5342d37fd8">
 
 
