@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
         super.viewDidLoad()
 
     }
@@ -49,4 +51,11 @@ class LoginViewController: UIViewController {
             }
     
 
+}
+extension LoginViewController{
+    @objc func dismissKeyboard(sender: UITapGestureRecognizer){
+        passwordTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+    }
+    
 }

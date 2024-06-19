@@ -23,6 +23,8 @@ class ReservationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
       
        
     }
@@ -74,4 +76,13 @@ class ReservationViewController: UIViewController {
         
     }
 
+}
+extension ReservationViewController{
+    @objc func dismissKeyboard(sender: UITapGestureRecognizer){
+        reservationTimeTextField.resignFirstResponder()
+        addressTextField.resignFirstResponder()
+
+   
+    }
+    
 }

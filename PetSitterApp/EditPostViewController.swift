@@ -22,6 +22,8 @@ class EditPostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
         db = Firestore.firestore()
 
         titleTextField.text = post.postTitle
@@ -66,4 +68,13 @@ class EditPostViewController: UIViewController {
     }
     */
 
+}
+extension EditPostViewController{
+    @objc func dismissKeyboard(sender: UITapGestureRecognizer){
+        detailTextField.resignFirstResponder()
+        priceTextField.resignFirstResponder()
+        titleTextField.resignFirstResponder()
+   
+    }
+    
 }

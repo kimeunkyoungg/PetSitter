@@ -27,6 +27,8 @@ class AddPetViewController: UIViewController {
         super.viewDidLoad()
         let imageTapGesture = UITapGestureRecognizer(target: self, action: #selector(capturePicture))
         petImageView.addGestureRecognizer(imageTapGesture)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
         
         // Do any additional setup after loading the view.
     }
@@ -164,3 +166,16 @@ extension AddPetViewController: UINavigationControllerDelegate, UIImagePickerCon
         picker.dismiss(animated: true, completion: nil)
     }
 }
+
+extension AddPetViewController{
+    @objc func dismissKeyboard(sender: UITapGestureRecognizer){
+        petWeightTextField.resignFirstResponder()
+        petKindTextField.resignFirstResponder()
+        petSexTextField.resignFirstResponder()
+        petNameTextField.resignFirstResponder()
+        petAgeTextField.resignFirstResponder()
+        
+    }
+    
+}
+

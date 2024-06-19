@@ -23,6 +23,8 @@ class AddPostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
         
 
 
@@ -73,4 +75,14 @@ class AddPostViewController: UIViewController {
     }
     
 
+}
+extension AddPostViewController{
+    @objc func dismissKeyboard(sender: UITapGestureRecognizer){
+        detailTextField.resignFirstResponder()
+        priceTextField.resignFirstResponder()
+        titleTextField.resignFirstResponder()
+ 
+   
+    }
+    
 }
